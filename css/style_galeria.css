@@ -89,10 +89,8 @@ header {
 
 /* main */
 .gallery {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px 0px;
+  max-width: 85%;
+  margin: 20px auto;
 }
 
 .gallery .title {
@@ -106,11 +104,16 @@ header {
 }
 
 .gallery .image-gallery {
+  columns: 3 250px;
+  gap: 15px;
+}
+
+.gallery .image-gallery img {
   margin-bottom: 10px;
-  border: radius 5px;
+  border-radius: 5px;
   width: 100%;
   filter: grayscale(80%);
-  transition: filter 0.3s transform 0.3s;
+  transition: filter 0.3s, transform 0.3s;
 }
 
 .gallery .image-gallery img:hover {
