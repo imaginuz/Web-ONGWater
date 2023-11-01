@@ -105,6 +105,19 @@ header {
   padding: 15px;
 }
 
+.gallery .image-gallery {
+  margin-bottom: 10px;
+  border: radius 5px;
+  width: 100%;
+  filter: grayscale(80%);
+  transition: filter 0.3s transform 0.3s;
+}
+
+.gallery .image-gallery:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
 /* footer */
 footer {
   width: 100%;
