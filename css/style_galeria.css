@@ -113,7 +113,7 @@ header {
   transition: filter 0.3s transform 0.3s;
 }
 
-.gallery .image-gallery:hover {
+.gallery .image-gallery img:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
 }
