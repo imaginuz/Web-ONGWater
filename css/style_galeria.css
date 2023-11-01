@@ -231,6 +231,11 @@ footer .grupo_2 {
     color: #fff;
   }
 
+  /* main */
+  .gallery .image-gallery img {
+    filter: grayscale(0%);
+  }
+
   /* footer */
   footer .grupo_1 {
     width: 90%;
