@@ -1,4 +1,3 @@
-
 body {
     width: 100%;
     height: 100%;
@@ -17,13 +16,15 @@ body {
   /* header */
   header {
     width: 100%;
-    height: 60px;/*Editalo*/
+    height: 60px;
+    /*Editalo*/
     line-height: 60px;
     text-align: center;
     font-family: sans-serif;
     background-color: #ffffff;
-    
+  
   }
+  
   /*Opcional Borrar, es cuando el logo es con letras*/
   .brand {
     width: auto;
@@ -63,7 +64,7 @@ body {
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
   
-  .menu ul li a{
+  .menu ul li a {
     color: #000;
   }
   
@@ -93,6 +94,50 @@ body {
     width: 30px;
   }
   
+  /*BODY*/
+  .hero-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    height: 640px;
+    /*margin-left: -0.5rem;
+      margin-right: -0.5rem;
+      margin-top: -0.5rem;*/
+  }
+  
+  .hero-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-panel h1 {
+    position: absolute;
+    font-size: 4rem;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 0 10px;
+    margin: 10px 10px 70px;
+  }
+  
+  .sobre-nosotros_2 {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Primera columna para el texto, segunda columna para la imagen */
+    column-gap: 2rem; /* Espacio entre las columnas */
+    align-items: center; /* Alinea verticalmente en el centro */
+    margin: 10px 5px 70px;
+    padding: 0 10px;
+    border: solid 1px #000;
+  }
   /*******************************FOOTER**********************************/
   footer {
     width: 100%;
@@ -158,7 +203,7 @@ body {
     color: #FFFFFF;
   }
   
-  /* navigation < 768px*/
+  /* navigation > 768px*/
   @media screen and (max-width: 896px) {
     .menu {
       width: 100%;
@@ -202,6 +247,38 @@ body {
       font-size: 1.7em;
       color: #fff;
     }
+  
+    /*BODY*/
+    .sobre-nosotros {
+      display: block;
+    }
+  
+    .sobre-nosotros .sobre-nosotros__imagen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .sobre-nosotros .sobre-nosotros__imagen img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .sobre-nosotros_2 {
+      display: block;
+    }
+    
+    .sobre-nosotros_2 .sobre-nosotros__imagen_2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .sobre-nosotros_2 .sobre-nosotros__imagen_2 img {
+      max-width: 100%;
+      height: auto;
+    }
+  
     /*FOOTER*/
     footer .grupo_1 {
       width: 90%;
@@ -210,11 +287,17 @@ body {
       padding: 35px 0px;
     }
   }
-
+  
   /* desktop */
-@media screen and (min-width: 1025px) {
-  body {
-    max-width: 1200px;
-    margin: 0px auto;
+  @media screen and (min-width: 1025px) {
+    body {
+      max-width: 1200px;
+      margin: 0px auto;
+    }
   }
-}
+  
+  /*@media (max-width: 768px) {
+    .sobre-nosotros {
+        display: block
+    }       
+  }*/
