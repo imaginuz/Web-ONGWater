@@ -1,59 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="../css/style_eventos.css">
-        <title>Eventos</title>
-    </head>
-    <body>
-        <header>
-            <figure class="brand">
-                <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
-            </figure>
-            <nav class="menu">
-                <input type="checkbox" id="menuToggle">
-                <label for="menuToggle" class="menu-icon"><img src="../img/menu.png" alt="menu"></label>
-                <ul>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Programas</a></li>
-                    <li><a href="#">Como Ayudar</a></li>
-                    <li><a href="../pages/galeria.html">Galeria Fotos</a></li>
-                    <li><a href="#">Donar</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <footer>
-            <div class="grupo_1">
-                <div class="box">
-                    <figure>
-                        <a href="#">
-                            <img src="../img/logo.png" alt="logo">
-                        </a>
-                    </figure>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/style_eventos.css">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <header>
+        <figure class="brand">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </figure>
+        <nav class="menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><img src="../img/menu.png" alt="menu"></label>
+            <ul>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Programas</a></li>
+                <li><a href="#">Como Ayudar</a></li>
+                <li><a href="../pages/galeria.html">Galeria Fotos</a></li>
+                <li><a href="#">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Calendario de Eventos</h1>
+            <section class="event-section">
+                <h2>Próximos Eventos</h2>
+                <div class="events upcoming-events">
+                    <!-- Eventos próximos -->
+                    <article class="event">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">Dic</span>
+                        </div>
+                        <h3>Evento Futuro 1</h3>
+                        <p>Descripción breve del evento futuro 1.</p>
+                        <p class="event-full-date">10 de diciembre de 2023</p>
+                    </article>
+                    <article class="event">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">Dic</span>
+                        </div>
+                        <h3>Evento Futuro 1</h3>
+                        <p>Descripción breve del evento futuro 1.</p>
+                        <p class="event-full-date">10 de diciembre de 2023</p>
+                    </article>
+                    <article class="event">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">Dic</span>
+                        </div>
+                        <h3>Evento Futuro 1</h3>
+                        <p>Descripción breve del evento futuro 1.</p>
+                        <p class="event-full-date">10 de diciembre de 2023</p>
+                    </article>
                 </div>
-                <div class="box">
-                    <h2>MAS DE NOSOTROS</h2>
-                    <p><a href="#">Blog</a></p>
-                    <p><a href="eventos.html">Eventos</a></p>
-                    <p><a href="#">Contactenos</a></p>
-                    <p><a href="#">Preguntas Frecuentes</a></p>
+            </section>
+
+            <section class="event-section">
+                <h2>Eventos Pasados</h2>
+                <div class="events past-events">
+                    <article class="event">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">Dic</span>
+                        </div>
+                        <h3>Evento Pasado 1</h3>
+                        <p>Descripción breve del evento futuro 1.</p>
+                        <p class="event-full-date">10 de diciembre de 2019</p>
+                    </article>
+                    <article class="event">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">Dic</span>
+                        </div>
+                        <h3>Evento Pasado 1</h3>
+                        <p>Descripción breve del evento futuro 1.</p>
+                        <p class="event-full-date">10 de diciembre de 2019</p>
+                    </article>
+                    <article class="event">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month">Dic</span>
+                        </div>
+                        <h3>Evento Pasado 1</h3>
+                        <p>Descripción breve del evento futuro 1.</p>
+                        <p class="event-full-date">10 de diciembre de 2019</p>
+                    </article>
                 </div>
-                <div class="box">
-                    <h2>SIGUENOS</h2>
-                    <div class="red_social">
-                        <a href=""><img src="../img/facebook.png" alt="facebook"></a>
-                        <a href=""><img src="../img/instagram.png" alt="instagram"></a>
-                        <a href=""><img src="../img/twitter.png" alt="twitter"></a>
-                        <a href=""><img src="../img/youtube.png" alt="youtube"></a>
-                        <a href=""><img src="../img/github.png" alt="githud"></a>
-                    </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="grupo_1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>MAS DE NOSOTROS</h2>
+                <p><a href="#">Blog</a></p>
+                <p><a href="eventos.html">Eventos</a></p>
+                <p><a href="#">Contactenos</a></p>
+                <p><a href="#">Preguntas Frecuentes</a></p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red_social">
+                    <a href=""><img src="../img/facebook.png" alt="facebook"></a>
+                    <a href=""><img src="../img/instagram.png" alt="instagram"></a>
+                    <a href=""><img src="../img/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="../img/youtube.png" alt="youtube"></a>
+                    <a href=""><img src="../img/github.png" alt="githud"></a>
                 </div>
             </div>
-            <div class="grupo_2">
-                <small>&copy; 2023 <b>Water</b> Todos los Derechos Reservados</small>
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div class="grupo_2">
+            <small>&copy; 2023 <b>Water</b> Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+</body>
+
 </html>
