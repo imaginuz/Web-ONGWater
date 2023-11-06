@@ -113,7 +113,7 @@ body {
   
   .event-section h2 {
     background-color: #9eeaff;
-    color: white;
+    color: #333;
   }
   
   article.event {
@@ -298,8 +298,7 @@ footer {
     }
   
     /* main */
-  
-  
+
     /* footer */
     footer .grupo_1 {
       width: 90%;
