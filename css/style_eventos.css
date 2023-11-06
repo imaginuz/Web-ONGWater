@@ -298,14 +298,7 @@ footer {
     }
   
     /* main */
-    .events {
-        flex-direction: column;
-      }
-      .event {
-        width: 100%;
-        max-width: none;
-        margin: 10px 0; /* Ajuste del margen para que solo se aplique arriba y abajo */
-      }
+  
   
     /* footer */
     footer .grupo_1 {
