@@ -88,7 +88,105 @@ body {
   }
 
   /* main */
-
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .event-section {
+    margin: 40px 0;
+  }
+  
+  .event-section h2, .event-date {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9eeaff;
+    color: white;
+  }
+  
+  .event-section h2 {
+    background-color: #9eeaff;
+    color: white;
+  }
+  
+  article.event {
+    flex: 0 0 auto;
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .event-date {
+    background-color: #9eeaff;
+    color: #333; /* Este es el color que tenías antes */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid #9eeaff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .event {
+    flex: 0 0 auto;
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .event-day {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .event-month {
+    display: block;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  
+  .event-full-date {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .event img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .event h3, .event p {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+  }
+  
+  .past-events {
+    opacity: 0.6;
+  }
+  
   /* footer */
 footer {
     width: 100%;
@@ -200,9 +298,14 @@ footer {
     }
   
     /* main */
-    .gallery .image-gallery img {
-      filter: grayscale(0%);
-    }
+    .events {
+        flex-direction: column;
+      }
+      .event {
+        width: 100%;
+        max-width: none;
+        margin: 10px 0; /* Ajuste del margen para que solo se aplique arriba y abajo */
+      }
   
     /* footer */
     footer .grupo_1 {
