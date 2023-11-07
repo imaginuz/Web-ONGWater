@@ -244,3 +244,13 @@ footer .grupo_2 {
     padding: 35px 0px;
   }
 }
+
+/*DUDOSO*/
+/*
+@media screen and (min-width: 1025px) {
+  body {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+}
+*/
