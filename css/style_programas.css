@@ -122,7 +122,7 @@ header {
     /* Espacio entre las columnas */
     align-items: center;
     /* Alinea verticalmente en el centro */
-    margin: 10px 5px 70px;
+    margin: 10px 50px;
     padding: 10px 10px;
 }
 
@@ -131,16 +131,58 @@ header {
     height: auto;
 }
 
-.programa_intro .programa__texto h2 {
+.programa_intro .programa__texto h2,
+.card-container .card .card-title h2 {
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 1.5
 }
 
-.programa_intro .programa__texto p {
+.programa_intro .programa__texto p,
+.card-container .card .body p {
     font-size: 17px;
     letter-spacing: 0.5px;
     line-height: 1.5;
+}
+
+.text_content {
+    margin: 0px 50px;
+    padding: 30px 10px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.text_content h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.5
+}
+
+.text_content p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    /*Los cuadros que no quepan los pase para abajo*/
+    justify-content: center;
+    /*border: 1px solid #333;*/
+    max-width: 1100px;
+    margin: 1rem auto 1rem auto;
+}
+
+.card {
+
+    width: 300px;
+    padding: 0.5rem;
+    /*box-shadow: 3px 3px 5px #777;*/
+    box-shadow: 3px 0px 0.5px #000;
+    /*Sirve para aplicar sombra*/
+    margin: 1rem;
 }
 
 /*******************************FOOTER**********************************/
