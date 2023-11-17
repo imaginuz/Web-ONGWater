@@ -10,4 +10,6 @@ Este es un proyecto web de la clase de **Desarrollo de Portales Web 1** en la [U
 
 - Asshlly Michelle Castro Irías - 1503200400378 (**GitHub** [usuario](link))
 
+- Génesis Nicolle Hernández Flores - 1709200000981 (**GitHub** [usuario](link))
+
 ...
