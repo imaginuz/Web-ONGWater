@@ -326,7 +326,7 @@ footer .grupo_2 {
 }
 
 /* desktop */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1700px) {
     body {
         max-width: 1200px;
         margin: 0px auto;
