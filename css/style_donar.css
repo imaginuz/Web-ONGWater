@@ -1,0 +1,375 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/fondo_donar.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 60px;
+    /*Editalo*/
+    line-height: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+
+}
+
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+    color: #fff;
+}
+
+.brand img {
+    width: 150px;
+    height: auto;
+
+}
+
+/* Navigation */
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li a {
+    color: #000;
+}
+
+
+.menu ul li {
+    width: 20%;
+    height: inherit;
+    display: inline-block;
+}
+
+.menu ul li:hover {
+    background-color: #9eeaff;
+    color: #4b4b4b;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+/*BODY*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container h1{
+    font-size: 1.5rem;
+    color: #79bde9
+}
+.container {
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 25px #444;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+    background-color: #fff;
+}
+
+.container .datosMoney {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.container .datosMoney button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100px;
+    padding: 1rem 4rem 1rem 2.5rem;
+    margin: 0.5rem;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.container .datosMoney_2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .datosMoney_2 button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100px;
+    padding: 1rem 5rem 1rem 2.5rem;
+    margin: 1rem;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.container .datosMoney button:hover,
+.container .datosMoney_2 button:hover {
+    box-shadow: inset 0 0 3px 3px #CECFD1;
+}
+
+.container .datosMoney button:focus,
+.container .datosMoney_2 button:focus {
+    box-shadow: inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.container .datosMoney_2 fieldset {
+    border-radius: 5px;
+    background-color: #EFF3F5;
+    border: none;
+}
+
+.container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.two_colum {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.inputBox {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"],
+.inputBox select,
+.inputBox input[type="number"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #444;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.container fieldset {
+    width: 100%;
+}
+
+.inputBox button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background: #79bde9;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.inputBox button:hover {
+    background: #0011FF;
+    transition: all 0.3s ease;
+}
+/*******************************FOOTER**********************************/
+footer {
+    width: 100%;
+    background-color: #c5c5c5;
+}
+
+footer .grupo_1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+footer .grupo_1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo_1 .box figure img {
+    width: 250px;
+}
+
+footer .grupo_1 .box h2 {
+    color: #3a3a3a;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+footer .grupo_1 .box p a {
+    color: #3a3a3a;
+    margin-bottom: 10px;
+}
+
+footer .grupo_1 .box p a:hover {
+    color: #2a9fc0;
+    transition: all 0.7s;
+}
+
+footer .grupo_1 .box .red_social a img {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+footer .grupo_1 .box .red_social a img:hover {
+    transform: scale(1.2);
+    transition: all 0.1s;
+}
+
+footer .grupo_2 {
+    background-color: #b1b1b1;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* navigation < 768px*/
+@media screen and (max-width: 896px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+    }
+
+    .menu ul li {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff;
+        padding: 10px 0px 10px 5%;
+    }
+
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        line-height: 60px;
+    }
+
+    #menuToggle:checked~ul {
+        max-height: 350px;
+    }
+
+    .menu-icon img {
+        font-size: 1.7em;
+        color: #fff;
+    }
+    /*BODY*/
+
+    /*FOOTER*/
+    footer .grupo_1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: #d5d5d5;
+    }
+    .container {
+        width: 95%;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0px 5px 25px #444;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+    body {
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+}
