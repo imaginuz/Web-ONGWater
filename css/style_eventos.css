@@ -100,6 +100,63 @@ body {
     margin-top: 20px;
   }
   
+
+  .featured-event {
+    background-color: #f0f0f8; /* Un color de fondo suave */
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 30px;
+}
+
+.featured-event h2 {
+    color: #0072ce;
+    margin-bottom: 20px;
+}
+
+.featured-content {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    gap: 50px; /* Espacio entre la imagen y los detalles */
+}
+
+.featured-event-image {
+    width: 300px; /* O el tamaño que prefieras */
+    height: auto;
+    border-radius: 10px; /* Si quieres bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+}
+
+.featured-event-details {
+    text-align: left;
+    max-width: 500px;
+}
+
+.featured-event-details h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.featured-event-details p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.learn-more-btn {
+    background-color: #0072ce;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.learn-more-btn:hover {
+    background-color: #005fa3; /* Un tono más oscuro para el hover */
+}
+
   .event-section {
     margin: 40px 0;
   }
@@ -298,6 +355,15 @@ footer {
     }
   
     /* main */
+    /* featured event */
+    .featured-content {
+      flex-direction: column;
+      /*gap: 20px;*/
+  }
+  
+  .featured-event-image {
+      width: 100%;
+  }
 
     /* footer */
     footer .grupo_1 {
@@ -308,12 +374,3 @@ footer {
     }
   }
   
-  /*DUDOSO*/
-  /*
-  @media screen and (min-width: 1025px) {
-    body {
-      max-width: 1200px;
-      margin: 0px auto;
-    }
-  }
-  */
