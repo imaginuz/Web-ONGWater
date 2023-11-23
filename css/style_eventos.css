@@ -107,13 +107,13 @@ body {
   .event-section h2, .event-date {
     padding: 10px;
     border-radius: 5px;
-    background-color: #9eeaff;
+    background-color: #0072ce;
     color: white;
   }
   
   .event-section h2 {
-    background-color: #9eeaff;
-    color: #333;
+    background-color: #0072ce;
+    color: #ffffff;
   }
   
   article.event {
@@ -128,8 +128,8 @@ body {
   }
   
   .event-date {
-    background-color: #9eeaff;
-    color: #333; /* Este es el color que tenías antes */
+    background-color: #0072ce;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -138,7 +138,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border: 1px solid #9eeaff;
+    border: 1px solid #0072ce;
     border-radius: 5px;
     padding: 20px;
     margin-top: 10px;
