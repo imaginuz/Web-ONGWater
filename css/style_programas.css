@@ -184,6 +184,13 @@ header {
     /*Sirve para aplicar sombra*/
     margin: 1rem;
 }
+/*
+.card:hover {
+    transition: all 0.8s;
+    transform: scale(1.1);
+    box-shadow: none;
+    cursor: pointer;
+}*/
 
 /*******************************FOOTER**********************************/
 footer {
@@ -323,6 +330,13 @@ footer .grupo_2 {
         grid-gap: 30px;
         padding: 35px 0px;
     }
+    /*
+    .card:hover {
+        transition: none;
+        transform: none;
+        box-shadow: none;
+        cursor: none;
+    }*/
 }
 
 /* desktop */

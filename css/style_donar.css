@@ -202,7 +202,7 @@ main .container h1{
 .inputBox select,
 .inputBox input[type="number"] {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 50px;
     border-radius: 5px;
     border: none;
