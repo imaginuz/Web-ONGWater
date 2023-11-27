@@ -361,7 +361,11 @@ footer .grupo_2 {
 
   .featured-event-details,
   .featured-event-image {
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  .featured-event h2 {
+    margin-left: 0;
   }
 
   /* footer */
