@@ -139,6 +139,14 @@ h1 {
   line-height: 1.5;
 }
 
+.event-actions {
+  display: flex;
+  justify-content: right;
+  font-style: italic;
+  color: #666;
+  gap: 5px;
+}
+
 .learn-more-btn {
   background-color: #0072ce;
   color: #fff;
@@ -152,6 +160,10 @@ h1 {
 
 .learn-more-btn:hover {
   background-color: #005fa3;
+}
+
+#eventCountdown {
+  font-size: 1.2rem;
 }
 
 .event-section {
