@@ -7,7 +7,15 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #fff;
+    box-sizing: border-box;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/fondo_donar.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -90,108 +98,141 @@ header {
 }
 
 /*BODY*/
-.hero-panel {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #333;
-    height: 640px;
-}
-
-.hero-panel img {
+main {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-panel h1 {
-    position: absolute;
-    font-size: 4rem;
-    color: #FFFFFF;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-90%);
-    text-align: center;
-    font-weight: 500;
-}
-
-.programa_intro {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    /* Primera columna para el texto, segunda columna para la imagen */
-    column-gap: 2rem;
-    /* Espacio entre las columnas */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* Alinea verticalmente en el centro */
-    margin: 10px 50px;
-    padding: 10px 10px;
+    justify-content: center;
 }
 
-.programa_intro .programa__imagen img {
-    width: 400px;
-    height: auto;
+main .container h1{
+    font-size: 1.5rem;
+    color: #79bde9
+}
+.container {
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 25px #444;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+    background-color: #fff;
 }
 
-.programa_intro .programa__texto h2,
-.card-container .card .card-title h2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-    line-height: 1.5
-}
-
-.programa_intro .programa__texto p,
-.card-container .card .body p {
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-}
-
-.text_content {
-    margin: 0px 50px;
-    padding: 30px 10px;
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-}
-
-.text_content h2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-    line-height: 1.5
-}
-
-.text_content p {
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
-}
-
-.card-container {
+.container .datosMoney {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /*Los cuadros que no quepan los pase para abajo*/
     justify-content: center;
-    /*border: 1px solid #333;*/
-    max-width: 1100px;
-    margin: 1rem auto 1rem auto;
+    
 }
 
-.card {
+.container .datosMoney button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100px;
+    padding: 1rem 4rem 1rem 2.5rem;
+    margin: 0.5rem;
+    border: none;
+    transition: all 0.2s ease;
+}
 
-    width: 300px;
-    padding: 0.5rem;
-    /*box-shadow: 3px 3px 5px #777;*/
-    box-shadow: 3px 0px 0.5px #000;
-    /*Sirve para aplicar sombra*/
+.container .datosMoney_2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .datosMoney_2 button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100px;
+    padding: 1rem 5rem 1rem 2.5rem;
     margin: 1rem;
+    border: none;
+    transition: all 0.2s ease;
 }
-/*
-.card:hover {
-    transition: all 0.8s;
-    transform: scale(1.1);
-    box-shadow: none;
-    cursor: pointer;
-}*/
 
+.container .datosMoney button:hover,
+.container .datosMoney_2 button:hover {
+    box-shadow: inset 0 0 3px 3px #CECFD1;
+}
+
+.container .datosMoney button:focus,
+.container .datosMoney_2 button:focus {
+    box-shadow: inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.container .datosMoney_2 fieldset {
+    border-radius: 5px;
+    background-color: #EFF3F5;
+    border: none;
+}
+
+.container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.two_colum {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.inputBox {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"],
+.inputBox select,
+.inputBox input[type="number"] {
+    display: block;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #444;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.container fieldset {
+    width: 100%;
+}
+
+.inputBox button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background: #79bde9;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.inputBox button:hover {
+    background: #0011FF;
+    transition: all 0.3s ease;
+}
 /*******************************FOOTER**********************************/
 footer {
     width: 100%;
@@ -268,10 +309,6 @@ footer .grupo_2 {
         display: block;
         max-height: 0;
         overflow: hidden;
-        -webkit-transition: max-height 0.3s;
-        -moz-transition: max-height 0.3s;
-        -ms-transition: max-height 0.3s;
-        -o-transition: max-height 0.3s;
         transition: max-height 0.3s;
     }
 
@@ -301,27 +338,7 @@ footer .grupo_2 {
         font-size: 1.7em;
         color: #fff;
     }
-
     /*BODY*/
-    .hero-panel h1 {
-        transform: translateX(-50%);
-    }
-
-    .programa_intro {
-        display: block;
-        padding: 10px 50px;
-    }
-
-    .programa_intro .programa__imagen {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .programa_intro .programa__imagen img {
-        max-width: 100%;
-        height: auto;
-    }
 
     /*FOOTER*/
     footer .grupo_1 {
@@ -330,13 +347,24 @@ footer .grupo_2 {
         grid-gap: 30px;
         padding: 35px 0px;
     }
-    /*
-    .card:hover {
-        transition: none;
-        transform: none;
-        box-shadow: none;
-        cursor: none;
-    }*/
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: #d5d5d5;
+    }
+    .container {
+        width: 95%;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0px 5px 25px #444;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+    }
 }
 
 /* desktop */

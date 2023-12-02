@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/contactenos.css">
+    <title>Contáctenos</title>
+</head>
+
+<body>
+    <header>
+        <figure class="brand">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </figure>
+        <nav class="menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><img src="../img/menu.png" alt="menu"></label>
+            <ul>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/programas.html">Programas</a></li>
+                <li><a href="#">Como Ayudar</a></li>
+                <li><a href="../pages/galeria.html">Galeria Fotos</a></li>
+                <li><a href="#">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contáctenos</h1>
+            <p>Gracias por su interés en Water.org y nuestra misión de llevar agua segura y saneamiento al mundo. Explore nuestro sitio web para obtener más información sobre nuestro trabajo, la crisis del agua y cómo puede ayudar.</p>
+            <ul>
+                <li>°Formas de donar para conocer todas las formas en que tanto las personas como las empresas pueden ayudar.</li>
+                <li>°Preguntas frecuentes para obtener respuestas a las preguntas más comunes.</li>
+                <li>°Recursos para medios y contenidos útiles.</li>
+                <li>°Carreras para conocer las ofertas de trabajo actuales y solicitar un puesto.</li>
+                <li>°Nuestro impacto si eres un estudiante que necesita información para un proyecto escolar.</li>
+                <li>°Solicitudes de medios o solicitudes de oradores para consultas de medios y eventos.</li>
+              </ul>
+            <section class="event-section">
+                <h2>Comuniquese con nosotros</h2>
+                
+                   
+            </section>
+            <section class="stripe-section single-column-content">
+                <div class="content-container">
+                <form action="/contact-us/" method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken" value="7sUYidxGhbm5ebbvMhXChYKNYujvSvIP2hliqjQD1HJmPw369INh8uykJYhJN7bn">
+                <div class="form-group"><label class="control-label" for="id_nombre">Nombre</label><input type="text" name="id_nombre" maxlength="255" class="form-control" placeholder="Nombre" title required id="id_name"></div>
+                <div class="form-group"><label class="control-label" for="id_correo">Correo Electronico</label><input type="correo" name="email-address" class="form-control" placeholder="Correo Electronico" title required id="id_email-address"></div>
+                <div class="form-group"><label class="control-label" for="id_asunto">Asunto</label><input type="text" name="asunto" maxlength="255" class="form-control" placeholder="Asunto" title required id="id_subject"></div>
+                <div class="form-group"><label class="control-label" for="id_contactenos">Cuéntanos más</label><textarea name="cuentanosmas" cols="40" rows="10" class="form-control" placeholder="Cuéntanos más" title required id="id_tell-us-more">
+                </textarea></div>
+                
+                
+                <div class="form-group">
+                <button type="Contáctate" class="btn btn-primary">
+                Contáctate
+                </button>
+                </div>
+                </form>
+                </div>
+                </section>
+        </div>
+    </main>
+    <footer>
+        <div class="grupo_1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>MAS DE NOSOTROS</h2>
+                <p><a href="blog.html">Blog</a></p>
+                <p><a href="eventos.html">Eventos</a></p>
+                <p><a href="contactenos.html">Contáctenos</a></p>
+                <p><a href="#">Preguntas Frecuentes</a></p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red_social">
+                    <a href=""><img src="../img/facebook.png" alt="facebook"></a>
+                    <a href=""><img src="../img/instagram.png" alt="instagram"></a>
+                    <a href=""><img src="../img/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="../img/youtube.png" alt="youtube"></a>
+                    <a href=""><img src="../img/github.png" alt="githud"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo_2">
+            <small>&copy; 2023 <b>Water</b> Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+</body>
+
+</html>

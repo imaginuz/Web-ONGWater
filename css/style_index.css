@@ -14,7 +14,6 @@ body {
     list-style: none;
   }
   
-  /* header */
   header {
     width: 100%;
     height: 60px;/*Editalo*/
@@ -24,7 +23,7 @@ body {
     background-color: #ffffff;
     
   }
-  /*Opcional Borrar, es cuando el logo es con letras*/
+
   .brand {
     width: auto;
     height: 100%;
@@ -39,7 +38,6 @@ body {
   
   }
   
-  /* Navigation */
   .menu {
     width: 60%;
     height: 100%;
@@ -52,15 +50,10 @@ body {
     margin: 0;
     padding: 0;
     display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;
-    /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;
-    /* TWEENER - IE 10 */
     display: -webkit-flex;
-    /* NEW - Chrome */
     display: flex;
-    /* NEW, Spec - Opera 12.1, Firefox 20+ */
   }
   
   .menu ul li a{
@@ -93,7 +86,120 @@ body {
     width: 30px;
   }
   
-  /*******************************FOOTER**********************************/
+  .hero-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #333;
+    height: 640px;
+  }
+  
+  .hero-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-panel h1 {
+    position: absolute;
+    font-size: 4rem;
+    color: #FFFFFF;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-90%);
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .info-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0072ce;
+    padding: 1em;
+    gap: 1em;
+  }
+  
+  .info-section {
+    flex: 1;
+    min-width: 250px;
+    background-color: #005ba5;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-section h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 0.5em;
+  }
+  
+  .info-section p {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  
+  .statistics-section {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+  
+  .statistic {
+    flex-basis: 20%;
+    margin: 1em;
+  }
+  
+  .statistic-number {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .statistic-label {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .global-impact-section {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -30px;
+  }
+
+.global-impact-section p{
+  text-align: center;
+  width: calc(100% - 20%);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+  
+  .statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2em;
+  }
+  
+  .statistics-section h3 {
+    margin-top: 2em;
+  }
+  
   footer {
     width: 100%;
     background-color: #c5c5c5;
@@ -158,7 +264,6 @@ body {
     color: #FFFFFF;
   }
   
-  /* navigation < 768px*/
   @media screen and (max-width: 896px) {
     .menu {
       width: 100%;
@@ -202,7 +307,7 @@ body {
       font-size: 1.7em;
       color: #fff;
     }
-    /*FOOTER*/
+
     footer .grupo_1 {
       width: 90%;
       grid-template-columns: repeat(1, 1fr);
@@ -212,7 +317,7 @@ body {
   }
 
   /* desktop */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1700px) {
   body {
     max-width: 1200px;
     margin: 0px auto;

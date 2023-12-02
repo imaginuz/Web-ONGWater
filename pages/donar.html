@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/style_index.css">
+        <link rel="stylesheet" href="../css/style_donar.css">
+        <title>Responsive Nav</title>
+    </head>
+    <body>
+        <header>
+            <figure class="brand">
+                <img src="../img/logo.png" alt="logo">
+            </figure>
+            <nav class="menu">
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon"><img src="../img/menu.png" alt="menu"></label>
+                <ul>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/programas.html">Programas</a></li>
+                    <li><a href="#">Como Ayudar</a></li>
+                    <li><a href="../pages/galeria.html">Galeria Fotos</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <div class="intro_donaciones">
+                    <h1>Donaciones</h1>
+                    <p>
+                        Su donación brinda a las familias que viven en la pobreza un 
+                        acceso duradero al agua potable y la esperanza, la salud y las
+                        oportunidades que brinda.
+                    </p>
+                    <p>
+                        Nuestra organización que se dedica a proporcionar acceso a agua 
+                        potable y saneamiento a personas en todo el mundo. Si deseas hacer 
+                        una donación, puedes hacer una donación única. Una vez seleccionada 
+                        la opción deseada, completa el proceso proporcionando tus datos 
+                        personales y de pago, ayudando así a proporcionar acceso a agua 
+                        potable y saneamiento a comunidades necesitadas en todo el mundo.
+                    </p>
+                </div>
+                <div>
+                    <p>Elija o ingrese un monto de donación</p>
+                </div>
+                <div class="datosMoney">
+                    <button type="submit">$25</button>
+                    <button type="submit">$100</button>
+                    <button type="submit">$250</button>
+                    <button type="submit">$500</button>
+                    <div class="inputBox">
+                        <label for="txtdinero">Cantidad de donación personalizada</label>
+                        <input type="number" id="txtdinero" placeholder="$" required />
+                    </div>
+                </div>
+                <div>
+                    <p>Elija o ingrese un monto de donación</p>
+                </div>
+                <div class="datosMoney_2">
+                    <button type="submit">Tajeta Credito</button>
+                    <button type="submit">Tarjeta  Debito</button>
+                    <fieldset>
+                        <div class="inputBox">
+                            <label for="txtdinero">Numero de Tarjeta</label>
+                            <input type="number" id="txtdinero" placeholder="" required />
+                        </div>
+                    </fieldset>
+                </div>
+        
+                <form action="" id="datosForm">
+                    <div class="two_colum">
+                        <div class="inputBox">
+                            <label for="txtnombre">Nombre</label>
+                            <input type="text" id="txtnombre" placeholder="Nombre" required />
+                        </div>
+        
+                        <div class="inputBox">
+                            <label for="txtapellido">Apellido</label>
+                            <input type="text" id="txtapellido" placeholder="Apellido" required />
+                        </div>
+                    </div>
+        
+                    <div class="inputBox">
+                        <label for="txtcorreo">Correo Electronico</label>
+                        <input type="email" id="txtcorreo" placeholder="Correo electrónico" required />
+                    </div>
+        
+                    <div class="inputBox">
+                        <label for="txtdireccion">Direccion</label>
+                        <input type="text" id="txtdireccion" placeholder="Direccion" required />
+                    </div>
+        
+                    <div class="two_colum">
+                        <div class="inputBox">
+                            <label for="txtciudad">Ciudad</label>
+                            <input type="text" id="txtdireccion" placeholder="Nombre Ciudad" required />
+                        </div>
+        
+                        <div class="inputBox">
+                            <label for="cmbDepartamento">Departamento</label>
+                            <select id="submit" name="cmbDepartamento" onclick="" required><!---->
+                                <option value="" disabled selected hidden>Seleccione Departamento</option>
+                                <option value="ATA">Atlantida</option>
+                                <option value="CHA">Choluteca</option>
+                                <option value="CON">Colon</option>
+                                <option value="COA">Comayagua</option>
+                                <option value="CPN">Copan</option>
+                                <option value="COS">Cortes</option>
+                                <option value="EPO">El Paraiso</option>
+                                <option value="FMA">Francisco Morazan</option>
+                                <option value="GAD">Gracias a Dios</option>
+                                <option value="INA">Intibuca</option>
+                                <option value="ISA">Islas de la Bahia</option>
+                                <option value="LAZ">La Paz</option>
+                                <option value="LES">Lempira</option>
+                                <option value="OCE">Ocotepeque</option>
+                                <option value="OLO">Olancho</option>
+                                <option value="SAA">Santa Barbara</option>
+                                <option value="VAE">Valle</option>
+                                <option value="YOO">Yoro</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="two_colum">
+                        <div class="inputBox">
+                            <label for="codigopostal">Codigo Postal</label>
+                            <input type="text" id="codigopostal" placeholder="Codigo Postal" required />
+                        </div>
+        
+                        <div class="inputBox">
+                            <label for="numerotel">Apellido</label>
+                            <input type="number" min="0" max="8" id="numerotel" placeholder="+(504) 0000-0000" required />
+                        </div>
+                    </div>
+        
+                    <fieldset>
+                        <input
+                            type="checkbox"
+                            id="chkInfo"
+                            name="chkInfo"
+                            value="1"
+                            required
+                        />
+                        <label for="chkInfo">Acepto terminos y condiciones</label>
+                    </fieldset>
+        
+                    <div class="inputBox">
+                        <button type="submit">Donar Ahora</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="grupo_1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../img/logo.png" alt="logo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>MAS DE NOSOTROS</h2>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="../pages/eventos.html">Eventos</a></p>
+                    <p><a href="#">Contactenos</a></p>
+                    <p><a href="#">Preguntas Frecuentes</a></p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red_social">
+                        <a href=""><img src="../img/facebook.png" alt="facebook"></a>
+                        <a href=""><img src="../img/instagram.png" alt="instagram"></a>
+                        <a href=""><img src="../img/twitter.png" alt="twitter"></a>
+                        <a href=""><img src="../img/youtube.png" alt="youtube"></a>
+                        <a href=""><img src="../img/github.png" alt="githud"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo_2">
+                <small>&copy; 2023 <b>Water</b> Todos los Derechos Reservados</small>
+            </div>
+        </footer>
+    </body>
+</html>
