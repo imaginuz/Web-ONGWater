@@ -100,6 +100,10 @@ body {
   }
   
   /*BODY*/
+  .max {
+    margin: 0 100px;
+  }
+
   .hero-panel {
     position: relative;
     overflow: hidden;
@@ -277,6 +281,9 @@ body {
     }
   
     /*BODY*/
+    .max {
+      margin: 0;
+    }
     .hero-panel h1 {
       transform: translateX(-50%);
     }
