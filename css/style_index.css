@@ -176,7 +176,16 @@ body {
     background-color: #f9f9f9;
     color: #333;
     text-align: center;
+    padding: 20px 0;
+    margin-top: -30px;
   }
+
+.global-impact-section p{
+  text-align: center;
+  width: calc(100% - 20%);
+  margin: 0 auto;
+  padding: 0 20px;
+}
   
   .statistics-container {
     display: flex;
