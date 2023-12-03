@@ -256,11 +256,6 @@ footer .grupo_2 {
         display: block;
         max-height: 0;
         overflow: hidden;
-        -webkit-transition: max-height 0.3s;
-        -moz-transition: max-height 0.3s;
-        -ms-transition: max-height 0.3s;
-        -o-transition: max-height 0.3s;
-        transition: max-height 0.3s;
     }
 
     .menu ul li {
