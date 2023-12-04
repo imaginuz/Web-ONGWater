@@ -6,7 +6,9 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../css/style_eventos.css">
+    <link rel="icon" href="img/favicon.ico">
     <title>Eventos</title>
+    <meta name="description" content="Explora los eventos en Water que te mantendran informado">
 </head>
 
 <body>
@@ -18,17 +20,37 @@
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle" class="menu-icon"><img src="../img/menu.png" alt="menu"></label>
             <ul>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="#">Programas</a></li>
-                <li><a href="#">Como Ayudar</a></li>
-                <li><a href="../pages/galeria.html">Galeria Fotos</a></li>
-                <li><a href="#">Donar</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="help.html">Como Ayudar</a></li>
+                <li><a href="galeria.html">Galeria Fotos</a></li>
+                <li><a href="donar.html">Donar</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="container">
             <h1>Calendario de Eventos</h1>
+            <section class="featured-event">
+                <h2>Evento Destacado</h2>
+                <div class="featured-content">
+                    <div class="featured-event-details">
+                        <h3>Dia Internacional Del Agua 2024</h3>
+                        <p>Promete ser un hito significativo en la lucha global por la gestión sostenible del agua. El
+                            Día Internacional del Agua 2024 será un recordatorio poderoso de que juntos, podemos hacer
+                            una diferencia en el futuro de nuestro mundo y garantizar que el agua esté disponible para
+                            las generaciones venideras.</p>
+                        <p class="featured-event-date" data-event-date="2024-03-21">Del 21 al 24 de marzo de 2024</p>
+                        <p class="featured-event-location">Evento Internacional, presencial-virtual</p>
+                        <a href="nosotros.html" class="learn-more-btn">Aprende Más</a>
+                        <div id="eventCountdown" class="event-actions">
+                            <span id="days"></span>- Dias restantes
+                        </div>
+                    </div>
+                    <img src="../img/featured-event.jpg" alt="Conferencia Nacional 2024" class="featured-event-image">
+                </div>
+            </section>
             <section class="event-section">
                 <h2>Próximos Eventos</h2>
                 <div class="events upcoming-events">
@@ -39,64 +61,66 @@
                             <span class="event-month">May</span>
                         </div>
                         <h3>Caminata del Agua</h3>
-                        <p>Camina simbólicamente para representar la distancia que muchas personas deben recorrer diariamente para acceder al agua.</p>
-                        <p class="event-full-date">10 de diciembre de 2023</p>
+                        <p>Camina simbólicamente para representar la distancia que muchas personas deben recorrer
+                            diariamente para acceder al agua.</p>
+                        <p class="event-full-date">05 de mayo de 2023</p>
                     </article>
                     <article class="event">
                         <div class="event-date">
-                            <span class="event-day">10</span>
-                            <span class="event-month">Dic</span>
+                            <span class="event-day">17</span>
+                            <span class="event-month">Jun</span>
                         </div>
                         <h3>Semana de Conciencia del Agua</h3>
                         <p>Charlas y talleres educativos sobre la importancia del agua y cómo conservarla.</p>
-                        <p class="event-full-date">10 de diciembre de 2023</p>
+                        <p class="event-full-date">17 de Junio de 2023</p>
                     </article>
                     <article class="event">
                         <div class="event-date">
-                            <span class="event-day">10</span>
-                            <span class="event-month">Dic</span>
+                            <span class="event-day">01</span>
+                            <span class="event-month">Jul</span>
                         </div>
                         <h3>Exhibición de Documentales Hídricos</h3>
                         <p>Presenta documentales que destaquen la crisis del agua a nivel global y local.</p>
-                        <p class="event-full-date">10 de diciembre de 2023</p>
+                        <p class="event-full-date">01 de Julio de 2023</p>
                     </article>
                 </div>
             </section>
-
             <section class="event-section">
                 <h2>Eventos Pasados</h2>
                 <div class="events past-events">
                     <article class="event">
                         <div class="event-date">
-                            <span class="event-day">10</span>
-                            <span class="event-month">Dic</span>
+                            <span class="event-day">02</span>
+                            <span class="event-month">Abr</span>
                         </div>
                         <h3>Charla con Experto en Agua</h3>
                         <p>Invita a expertos para discutir soluciones a la crisis del agua.</p>
-                        <p class="event-full-date">10 de diciembre de 2019</p>
+                        <p class="event-full-date">02 de abril de 2023</p>
                     </article>
                     <article class="event">
                         <div class="event-date">
-                            <span class="event-day">10</span>
-                            <span class="event-month">Dic</span>
+                            <span class="event-day">18</span>
+                            <span class="event-month">Mar</span>
                         </div>
                         <h3>Jornada de Voluntariado en Proyectos Hídricos</h3>
-                        <p>Organiza una jornada de voluntariado para trabajar en proyectos hídricos locales y educar sobre la importancia del agua.</p>
-                        <p class="event-full-date">10 de diciembre de 2019</p>
+                        <p>Organiza una jornada de voluntariado para trabajar en proyectos hídricos locales y educar
+                            sobre la importancia del agua.</p>
+                        <p class="event-full-date">18 de marzo de 2023</p>
                     </article>
                     <article class="event">
                         <div class="event-date">
-                            <span class="event-day">10</span>
-                            <span class="event-month">Dic</span>
+                            <span class="event-day">09</span>
+                            <span class="event-month">Ene</span>
                         </div>
                         <h3>Desafío de Ahorro de Agua</h3>
                         <p>Un desafío mensual para animar a las personas a reducir su consumo de agua.</p>
-                        <p class="event-full-date">10 de diciembre de 2019</p>
+                        <p class="event-full-date">09 de enero de 2023</p>
                     </article>
                 </div>
             </section>
         </div>
     </main>
+
     <footer>
         <div class="grupo_1">
             <div class="box">
@@ -108,19 +132,19 @@
             </div>
             <div class="box">
                 <h2>MAS DE NOSOTROS</h2>
-                <p><a href="#">Blog</a></p>
+                <p><a href="blog.html">Blog</a></p>
                 <p><a href="eventos.html">Eventos</a></p>
-                <p><a href="#">Contactenos</a></p>
+                <p><a href="contactenos.html">Contactenos</a></p>
                 <p><a href="#">Preguntas Frecuentes</a></p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red_social">
-                    <a href=""><img src="../img/facebook.png" alt="facebook"></a>
-                    <a href=""><img src="../img/instagram.png" alt="instagram"></a>
-                    <a href=""><img src="../img/twitter.png" alt="twitter"></a>
-                    <a href=""><img src="../img/youtube.png" alt="youtube"></a>
-                    <a href=""><img src="../img/github.png" alt="githud"></a>
+                    <a href="https://www.facebook.com/water"><img src="../img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/water"><img src="../img/instagram.png" alt="instagram"></a>
+                    <a href="https://twitter.com/water"><img src="../img/twitter.png" alt="twitter"></a>
+                    <a href="https://www.youtube.com/water"><img src="../img/youtube.png" alt="youtube"></a>
+                    <a href="https://github.com/imaginuz/ProyectoWeb_Organizacion"><img src="../img/github.png" alt="githud"></a>
                 </div>
             </div>
         </div>
@@ -128,6 +152,8 @@
             <small>&copy; 2023 <b>Water</b> Todos los Derechos Reservados</small>
         </div>
     </footer>
+    
+    <script src="../js/eventos.js"></script>
 </body>
 
 </html>

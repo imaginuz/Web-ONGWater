@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* header */
+  header {
+    width: 100%;
+    height: 60px;/*Editalo*/
+    line-height: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    
+  }
+  /*Opcional Borrar, es cuando el logo es con letras*/
+  .brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+    color: #fff;
+  }
+  
+  .brand img {
+    width: 150px;
+    height: auto;
+  
+  }
+  
+  /* Navigation */
+  .menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+  }
+  
+  .menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+  
+  .menu ul li a{
+    color: #000;
+  }
+  
+  
+  .menu ul li {
+    width: 20%;
+    height: inherit;
+    display: inline-block;
+  }
+  
+  .menu ul li:hover {
+    background-color: #9eeaff;
+    color: #4b4b4b;
+    border-radius: 15px;
+    transition: all 1s;
+  }
+  
+  #menuToggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .menu-icon img {
+    width: 30px;
+  }
+  
+  /*******************************FOOTER**********************************/
+  footer {
+    width: 100%;
+    background-color: #c5c5c5;
+  }
+  
+  footer .grupo_1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  
+  footer .grupo_1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .grupo_1 .box figure img {
+    width: 250px;
+  }
+  
+  footer .grupo_1 .box h2 {
+    color: #3a3a3a;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  footer .grupo_1 .box p a {
+    color: #3a3a3a;
+    margin-bottom: 10px;
+  }
+  
+  footer .grupo_1 .box p a:hover {
+    color: #2a9fc0;
+    transition: all 0.7s;
+  }
+  
+  footer .grupo_1 .box .red_social a img {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  
+  footer .grupo_1 .box .red_social a img:hover {
+    transform: scale(1.2);
+    transition: all 0.1s;
+  }
+  
+  footer .grupo_2 {
+    background-color: #b1b1b1;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  /* navigation < 768px*/
+  @media screen and (max-width: 896px) {
+    .menu {
+      width: 100%;
+      height: auto;
+    }
+  
+    .menu ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+      -ms-transition: max-height 0.3s;
+      -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+    }
+  
+    .menu ul li {
+      text-align: left;
+      width: 100%;
+      height: 50px;
+      background-color: #ffffff;
+      padding: 10px 0px 10px 5%;
+    }
+  
+    .menu-icon {
+      width: 100px;
+      height: inherit;
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      line-height: 60px;
+    }
+  
+    #menuToggle:checked~ul {
+      max-height: 350px;
+    }
+  
+    .menu-icon img {
+      font-size: 1.7em;
+      color: #fff;
+    }
+    /*FOOTER*/
+    footer .grupo_1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }
+
+  /* desktop */
+@media screen and (min-width: 1025px) {
+  body {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+}
+
+/*Cuerpo de la pagina de ayuda*/
+.texto h1{
+  font-size: 48px;
+  text-align: left;
+  color: blue;
+}
+
+.card:hover {
+  transform: scale(1.25);
+  z-index: 90;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 1rem auto 1rem auto;
+}
+
+.card {
+    position: relative;
+    border: solid 1px #333;
+    width:100%;
+    max-width: 316px;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 5px #777;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    z-index: initial;
+    transition: transform 0.75s ease-in-out, z-index 0.75s ease-in-out;
+}
+
+
+
+.card .body {
+    line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+}
+.card .card-image img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    width: 320px;
+    width: 220px;
+    display: block; 
+    margin: 0 auto;
+}
+/*.card img{
+    width: 200px;
+    width: 120px;
+    display: block; 
+    margin: 0 auto;
+}*/
+
+.hero-panel {
+    position:relative;
+    overflow:hidden;
+    height:90vh;
+    margin-left: -0.05rem;
+    margin-right: -0.05rem;
+    font-size: 30px; 
+}
+
+.hero-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-panel h1{
+    position: absolute;
+    top:30%;
+    left: 80%;
+    transform: translateX(-50%);
+    text-align: right;
+    color:white;
+    font-size: 50px; 
+}
+
